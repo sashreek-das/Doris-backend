@@ -3,8 +3,6 @@ const { User, Ticket } = require("../db")
 const jwt = require("jsonwebtoken")
 const { JWT_SECRET } = require("../config");
 const { authMiddleware } = require("./middleware");
-const { PrismaClient } = require('@prisma/client');
-const prisma = new PrismaClient();
 
 const router = express.Router();
 

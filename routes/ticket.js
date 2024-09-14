@@ -1,7 +1,7 @@
 const express = require("express");
 const { authMiddleware } = require("./middleware");
 const { User, Ticket } = require("../db");
-W
+
 
 const router = express.Router();
 
