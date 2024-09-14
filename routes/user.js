@@ -199,7 +199,7 @@ router.post('/sendFriendRequest/:friendId', authMiddleware, async (req, res) => 
 
 
 
-outer.post('/approveFriendRequest/:friendId', authMiddleware, async (req, res) => {
+router.post('/approveFriendRequest/:friendId', authMiddleware, async (req, res) => {
     try {
         const { friendId } = req.params;
         const userId = req.userId; // Extracted from auth middleware
